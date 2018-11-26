@@ -1,4 +1,4 @@
-FROM fmorgenstern/centos-ruby:ruby-2.3.5
+FROM fmorgenstern/centos-ruby:ruby-2.5.3
 
 RUN yum install curl-devel -y && \
 	gem install passenger -v 5.3.2 && \
