@@ -1,6 +1,6 @@
-FROM fmorgenstern/centos-ruby:ruby-2.4.3
+FROM fmorgenstern/centos-ruby:ruby-2.5.7
 
 RUN yum install curl-devel -y && \
-	gem install passenger -v 5.3.2 && \
+	gem install passenger -v 6.0.4 && \
 	passenger-install-nginx-module --auto --auto-download --languages ruby && \
 	yum clean all
